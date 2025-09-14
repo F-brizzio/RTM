@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Recubre tu mundo<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="soporte.html">Soporte</a>
+        </nav>
+    
+    <div class="icons">
+        <a href="carrito.html" class="fas fa-shopping-cart"></a>
+        <a href="isesion.html" class="fas fa-user"></a>
+    </div>
+ 
+    </header>
+    
+    <section class="home" id="home">
+        <div class="content">
+            <h3>La mejor calidad</h3>
+            <span>Recubre tus espacios, transforma tu mundo</span>
+            <p>Nuestro compromiso es combinar diseño, resistencia y funcionalidad para crear 
+            ambientes únicos que reflejen estilo, confort y modernidad.</p>
+            <a href="catalogo.html" class="btn">Compra ahora</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>Sobre </span>Nosotros</h1>
+
+        <div class="row">
+            <div class="imagen-container">
+                <img src="img/FRTM.jpg">
+                <h3>Los mejores revestimientos</h3>
+            </div>
+
+        <div class="content">
+            <h3>Quienes somos nosotros?</h3>
+            <p>En Recubre tu Mundo nos dedicamos a ofrecer revestimientos de alta calidad que combinan diseño, 
+                durabilidad y funcionalidad. Nuestro objetivo es transformar cualquier espacio en un ambiente único y acogedor, 
+                reflejando estilo, confort y modernidad en cada proyecto que realizamos.</p>
+            <p>Comprometidos con la excelencia, buscamos siempre superar las expectativas de nuestros clientes, 
+                ofreciendo soluciones personalizadas y un servicio cercano que garantiza confianza y satisfacción.</p>
+            <a href="#" class="btn">Leer más</a>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="productos" id="productos">
+        <h1 class="heading"> Últimos <span>productos</span></h1>
+
+        <div class="gallery">
+
+           <div class="conten">
+                <img src="img/ResMetalico.jpeg">
+                <h3>Revestimiento Metálico Negro (Caja 8 un)</h3>
+                <p>Marca: Grupo cubico</p>
+                <p>Siding Metálico</p>
+                <p>290 cm x 38.3 cm x 1.6 cm </p>
+
+                <div class="precio">
+                    <span class="precio-descuento">$11.990</span> 
+                    <span class="precio-original">$14.990</span> 
+                </div>
+
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" id="cantidad1">
+                    <button onclick="cotizar(14990, 'Revestimiento Metálico (8un)', 'cantidad1')">Cotizar</button>
+                </div>
+            </div>
+
+            <div class="conten">
+                <img src="img/PisMadera.jpeg">
+                <h3>Piso Porcelanato Nogal (Caja 6 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Porcelanato</p>
+                <p>120 cm x 20 cm x 1 cm</p>
+    
+                <div class="precio">
+                    <span class="precio-descuento">$10.790</span>
+                    <span class="precio-original">$11.990</span>
+                </div>
+
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" id="cantidad2">
+                    <button onclick="cotizar(11990, 'Piso Porcelanato (6un)', 'cantidad2')">Cotizar</button>
+                </div>
+            </div>
+
+            <div class="conten">
+                <img src="img/Texgran.jpeg">
+                <h3>Siding Texturixado Granito Piedra (Caja 8 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Siding Metálico</p>
+                <p>290 cm x 38.3 cm x 1.6 cm</p>
+                
+                <div class="precio">
+                    <span class="precio-descuento">$27.000</span> 
+                    <span class="precio-original"></span> 
+                </div>
+
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" id="cantidad3">
+                    <button onclick="cotizar(27000, 'Siding Texturixado Piedra (8un)', 'cantidad3')">Cotizar</button>
+                </div>
+            </div>
+
+            <div class="conten">
+                <img src="img/Texgran.jpeg">
+                <h3>Siding Texturixado Granito Cafe (Caja 8 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Siding Metálico</p>
+                <p>290 cm x 38.3 cm x 1.6 cm</p>
+                
+                <div class="precio">
+                    <span class="precio-descuento">$27.000</span> 
+                    <span class="precio-original"></span> 
+                </div>
+
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" id="cantidad4">
+                    <button onclick="cotizar(27000, 'Siding Texturixado Cafe (8un)', 'cantidad1')">Cotizar</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Enlaces Rapidos</h3>
+                <a href="#">Home</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Catalogo</a>
+                <a href="#">Contacto</a>
+            </div>
+
+            <div class="box">
+                <h3>Retiro</h3>
+                <a href="#"><b>Presencial</b><br>En la Casa Matriz Desde 11:00 hasta las 17:00.</a>
+                <a href="#"><b>Envios</b><br>Se depacharan los envios desde las 9:00 los dias Martes y Jueves.
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>locación</h3>
+                <a href="https://www.google.com/maps/place/Duoc+UC:+Sede+Alameda/data=!4m2!3m1!1s0x0:0xe38282e406413635?sa=X&ved=1t:2428&ictx=111"><b>Casa Matriz </b><br>Santiago Av. España 8, 8350708 Santiago, Región Metropolitana</a>
+                <a href="#"><b>Horario de atencion</b><br>Lunes a Viernes | Desde 9:00 hasta 18:00</a>
+            </div>
+
+            <div class="box">
+                <h3>Informacion de contacto</h3>
+                <a href="#">+56 9 1234 5678</a>
+                <a href="#">example@rtmr.com</a>
+                <a href="#">nujsjsjsj</a>
+                <img src="img/logo-transbank.png" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                Creado con <i class="fa fa-heart"></i> Por
+                <a target="_blank" href="">Equipo RTM</a>
+                - Lee como creamos la pagina y como puedes unirte a nosotros
+                <a target="_blank" href=" ">Aqui</a>.
+            </p>
+    </footer>
+
+    </section>
+
+</body>
+</html>
