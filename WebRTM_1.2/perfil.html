@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mi Cuenta - Recubre tu Mundo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/stylleperfil.css"/> 
+
+</head>
+<body>
+    <!-- HEADER (Proporcionado por el usuario) -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Recubre tu mundo<span>.</span></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="soporte.html">Soporte</a>
+        </nav>
+        <div class="icons">
+            <a href="carrito.html" class="fas fa-shopping-cart"></a>
+            <a href="isesion.html" class="fas fa-user"></a>
+        </div>
+    </header>
+    <!--PERFIL -->
+
+    <div class="profile-layout">
+        <aside id="sidebar">
+            <nav>
+                <div class="sidebar-group-header">Mi Cuenta</div>
+                <ul>
+                    <!-- secciones -->
+                    <li><a href="#" data-section="dashboard-section" class="active-link">Mi Perfil</a></li>
+                    <li><a href="#" data-section="addresses-section">Direcciones</a></li>
+                    <li><a href="#" data-section="payment-section">Opciones de Pago</a></li>
+                    <li><a href="#" data-section="admin-section">Administrar Cuenta</a></li>
+                </ul>
+
+                <div class="sidebar-group-header">Mis Pedidos</div>
+                <ul>
+                    <!--estado de pedidos -->
+                    <li><a href="#" data-section="orders-list-section" data-status-filter="No Pagado">No Pagado</a></li>
+                    <li><a href="#" data-section="orders-list-section" data-status-filter="Procesando">Procesando</a></li>
+                    <li><a href="#" data-section="orders-list-section" data-status-filter="Enviado">Enviado</a></li>
+                    <li><a href="#" data-section="orders-list-section" data-status-filter="Comentarios">Comentarios</a></li>
+                    <li><a href="#" data-section="orders-list-section" data-status-filter="Devolución">Devolución</a></li>
+                </ul>
+            </nav>
+            <!-- Cerrar Sesión -->
+            <div class="sidebar-footer">
+                 <a href="#" id="logoutButton" class="logout-link"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+            </div>
+        </aside>
+
+        <main id="main-content">
+            <div class="main-header">
+                <h1>Hola, <span id="welcomeUserName">Usuario123</span></h1>
+                <!--edición de perfil-->
+                <a href="#" data-section="edit-profile-section" class="profile-link-top">Mi Perfil</a>
+            </div>
+            
+            <section id="dashboard-section" class="active-section">
+                <div class="loyalty-cards-container">
+                    <div class="info-card">
+                        <h3 class="card-title">Cupones</h3>
+                        <p class="card-value" id="cuponesCount">0 disponibles</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="card-title">Puntos</h3>
+                        <p class="card-value" id="puntosCount">0 pts</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="card-title">Cartera</h3>
+                        <p class="card-value" id="carteraAmount">$0 CLP</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="card-title">Tarjeta Regalo</h3>
+                        <p class="card-value" id="giftCardCount">0 activas</p>
+                    </div>
+                </div>
+
+                <h2>Mis Pedidos</h2>
+                <div class="order-status-cards-container">
+                    <div class="order-status-card" data-status-filter="No Pagado">
+                        <h3 class="status-title">No Pagado</h3>
+                        <p class="status-count" id="noPagadoCount">0</p>
+                    </div>
+                    <div class="order-status-card highlight" data-status-filter="Procesando">
+                        <h3 class="status-title">Procesando</h3>
+                        <p class="status-count" id="procesandoCount">0</p>
+                    </div>
+                    <div class="order-status-card" data-status-filter="Enviado">
+                        <h3 class="status-title">Enviado</h3>
+                        <p class="status-count" id="enviadoCount">0</p>
+                    </div>
+                    <div class="order-status-card" data-status-filter="Comentarios">
+                        <h3 class="status-title">Comentarios</h3>
+                        <p class="status-count" id="comentariosCount">0</p>
+                    </div>
+                    <div class="order-status-card" data-status-filter="Devolución">
+                        <h3 class="status-title">Devolución</h3>
+                        <p class="status-count" id="devolucionCount">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. SECCIÓN DE EDICIÓN DE PERFIL -->
+            <section id="edit-profile-section" style="display:none;">
+                <h2>Editar Mi Perfil</h2>
+                <form id="editProfileForm" class="profile-form">
+                    
+                    <div class="profile-image-container">
+                        <!-- Usamos la imagen por defecto si no hay una cargada -->
+                        <img id="currentProfileImage" src="https://placehold.co/120x120/CCCCCC/000000?text=Perfil" alt="Imagen de Perfil" class="main-profile-img">
+                        <label for="profileImageInput" class="image-upload-label">
+                            <i class="fas fa-camera"></i> Cambiar Imagen
+                        </label>
+                        <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+                    </div>
+
+                    <label for="editName">Nombre:</label>
+                    <input type="text" id="editName" required>
+
+                    <label for="editPassword">Nueva Contraseña (dejar vacío para no cambiar):</label>
+                    <input type="password" id="editPassword">
+                    
+                    <label for="editPasswordConfirm">Confirmar Nueva Contraseña:</label>
+                    <input type="password" id="editPasswordConfirm">
+                    
+                    <button type="submit" class="save-button"><i class="fas fa-save"></i> Guardar Cambios</button>
+                    <p id="profileMessage" class="message"></p>
+                </form>
+            </section>
+
+            <!-- 3. SECCIÓN DE PEDIDOS DETALLADOS -->
+            <section id="orders-list-section" style="display:none;">
+                <h2>Pedidos <span id="orderFilterTitle">Filtrados</span></h2>
+                <p>Mostrando la lista de pedidos para el estado seleccionado.</p>
+                <div id="ordersListContainer">
+                    <!-- Aquí se cargarían los pedidos -->
+                </div>
+            </section>
+            
+            <!-- 4. SECCIONES PLACEHOLDER -->
+            <section id="addresses-section" style="display:none;"><h2>Mis Direcciones</h2><p>Contenido para gestionar direcciones.</p></section>
+            <section id="payment-section" style="display:none;"><h2>Opciones de Pago</h2><p>Contenido para gestionar métodos de pago.</p></section>
+            <section id="measures-section" style="display:none;"><h2>Mis Medidas</h2><p>Contenido para guardar medidas personales (si aplica).</p></section>
+            <section id="admin-section" style="display:none;"><h2>Administrar Cuenta</h2><p>Configuraciones avanzadas de la cuenta.</p></section>
+            
+        </main>
+    </div>
+
+    <script src="js/ises.js"></script>
+</body>
+</html>

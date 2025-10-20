@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Catálogo - Recubre tu mundo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"/> </head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Recubre tu mundo<span>.</span></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="soporte.html">Soporte</a>
+        </nav>
+        <div class="icons">
+            <a href="carrito.html" class="fas fa-shopping-cart"></a>
+            <a href="isesion.html" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <section class="productos" id="productos">
+        <h1 class="heading">Nuestro <span>Catálogo</span></h1>
+        <div class="gallery">
+
+            <div class="conten" data-id="1">
+                <img src="img/ResMetalico.jpeg" alt="Revestimiento Metálico Negro">
+                <h3>Revestimiento Metálico Negro (Caja 8 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Siding Metálico</p>
+                <p>290 cm x 38.3 cm x 1.6 cm </p>
+                <div class="precio">
+                    <span class="precio-descuento">$11.990</span> 
+                    <span class="precio-original">$14.990</span> 
+                </div>
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" class="cantidad-input">
+                    <button class="add-to-cart-btn" 
+                            data-nombre="Revestimiento Metálico Negro" 
+                            data-precio="11990" 
+                            data-imagen="img/ResMetalico.jpeg">Cotizar</button>
+                </div>
+            </div>
+
+            <div class="conten" data-id="2">
+                <img src="img/PisMadera.jpeg" alt="Piso Porcelanato Nogal">
+                <h3>Piso Porcelanato Nogal (Caja 6 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Porcelanato</p>
+                <p>120 cm x 20 cm x 1 cm</p>
+                <div class="precio">
+                    <span class="precio-descuento">$10.790</span>
+                    <span class="precio-original">$11.990</span>
+                </div>
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" class="cantidad-input">
+                    <button class="add-to-cart-btn" 
+                            data-nombre="Piso Porcelanato Nogal" 
+                            data-precio="10790" 
+                            data-imagen="img/PisMadera.jpeg">Cotizar</button>
+                </div>
+            </div>
+
+            <div class="conten" data-id="3">
+                <img src="img/Texgran.jpeg" alt="Siding Granito Piedra">
+                <h3>Siding Texturizado Granito Piedra (Caja 8 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Siding Metálico</p>
+                <p>290 cm x 38.3 cm x 1.6 cm</p>
+                <div class="precio">
+                    <span class="precio-descuento">$27.000</span> 
+                </div>
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" class="cantidad-input">
+                    <button class="add-to-cart-btn" 
+                            data-nombre="Siding Texturizado Granito Piedra" 
+                            data-precio="27000" 
+                            data-imagen="img/Texgran.jpeg">Cotizar</button>
+                </div>
+            </div>
+
+            <div class="conten" data-id="4">
+                <img src="img/Texgran.jpeg" alt="Siding Granito Café">
+                <h3>Siding Texturizado Granito Café (Caja 8 un)</h3>
+                <p>Marca: Grupo Cubico</p>
+                <p>Siding Metálico</p>
+                <p>290 cm x 38.3 cm x 1.6 cm</p>
+                <div class="precio">
+                    <span class="precio-descuento">$27.000</span> 
+                </div>
+                <div class="acciones">
+                    <input type="number" min="1" max="50" value="1" class="cantidad-input">
+                    <button class="add-to-cart-btn" 
+                            data-nombre="Siding Texturizado Granito Café" 
+                            data-precio="27000" 
+                            data-imagen="img/Texgran.jpeg">Cotizar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2025 Recubre tu mundo | Todos los derechos reservados
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>
